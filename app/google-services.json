@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "633240168788",
+    "project_id": "childrenentertainmentapp",
+    "storage_bucket": "childrenentertainmentapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633240168788:android:2c0bdb71dc7cf1da4780c1",
+        "android_client_info": {
+          "package_name": "com.example.cocukeglence"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv3aBh8ZA1MxAzjnz9JMZcrldDgYTEv8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
