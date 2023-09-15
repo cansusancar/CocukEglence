@@ -6,5 +6,6 @@
         android:id="@+id/action_ara"
         android:icon="@drawable/ara_resim"
         android:title="ara"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
         app:showAsAction="always|collapseActionView" />
 </menu>

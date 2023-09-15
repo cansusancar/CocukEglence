@@ -5,62 +5,60 @@
 
     <data>
         <variable name="icerikNesnesi" type="com.example.cocukeglence.data.entity.Icerikler" />
-
-
     </data>
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/icerik_card"
+        android:layout_margin="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
 
             <ImageView
                 android:id="@+id/imageViewIcerikResim"
-                android:layout_width="120dp"
-                android:layout_height="130dp"
-                android:layout_marginTop="15dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewIcerikAd"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewSil"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/masalresim" />
+                app:srcCompat="@drawable/masalevarkaplansiz" />
 
             <TextView
                 android:id="@+id/textViewIcerikAd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
                 android:text='@{icerikNesnesi.icerik_ad}'
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageViewIcerikResim" />
+                app:layout_constraintEnd_toEndOf="@+id/imageViewIcerikResim"
+                app:layout_constraintStart_toStartOf="@+id/imageViewIcerikResim"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewIcerikResim"
+                tools:text="resim adı" />
 
             <ImageView
                 android:id="@+id/imageViewSil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="264dp"
-                android:layout_marginBottom="16dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewIcerikResim"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.519"
+                app:layout_constraintStart_toEndOf="@+id/imageViewIcerikResim"
+                app:layout_constraintTop_toTopOf="@+id/imageViewIcerikResim"
                 app:srcCompat="@drawable/sil_resim" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
-</LinearLayout>
-    </layout>
+</layout>

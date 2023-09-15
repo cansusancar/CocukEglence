@@ -55,7 +55,7 @@ class IcerikActivity : AppCompatActivity(),SearchView.OnQueryTextListener {
 
         val storage = FirebaseStorage.getInstance()
         val storageRef = storage.reference
-        val imageRef = storageRef.child("Image20230903125701.png")
+        val imageRef = storageRef.child("Pinocchio.png")
 
 
         imageRef.downloadUrl.addOnSuccessListener { uri ->
