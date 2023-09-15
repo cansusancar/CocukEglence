@@ -1,4 +1,4 @@
-package com.example.cocukeglence
+package com.example.cocukeglence.ui.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.cocukeglence.IcerikActivity
+import com.example.cocukeglence.data.entity.Kategoriler
+import com.example.cocukeglence.R
 
 class KategorilerAdapter(private val mContext: Context, private val kategoriListe:List<Kategoriler>) :
     RecyclerView.Adapter<KategorilerAdapter.CardTasarimTutucu> (){
@@ -37,7 +40,7 @@ return CardTasarimTutucu(tasarim)    }
         holder.textViewKategoriAd.text = kategori.kategori_ad
         holder.kategori_card.setOnClickListener{
 
-            val intent = Intent(mContext,IcerikActivity::class.java)
+            val intent = Intent(mContext, IcerikActivity::class.java)
             intent.putExtra("kategoriNesne",kategori)
             mContext.startActivity(intent)
 

@@ -2,11 +2,8 @@ package com.example.cocukeglence
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.cocukeglence.data.entity.Icerikler
 import com.example.cocukeglence.databinding.ActivityIcerik2Binding
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
 
 class Icerik2Activity : AppCompatActivity() {
     private lateinit var binding : ActivityIcerik2Binding

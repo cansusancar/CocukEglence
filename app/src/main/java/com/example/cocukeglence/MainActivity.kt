@@ -3,8 +3,11 @@ package com.example.cocukeglence
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.cocukeglence.data.entity.Kategoriler
+import com.example.cocukeglence.ui.adapter.KategorilerAdapter
 import com.example.cocukeglence.databinding.ActivityMainBinding
 
+//CocukEglence-Kopya projesine View model ve data binding eklenmiş hali
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
     private lateinit var kategorilerListe: ArrayList<Kategoriler>

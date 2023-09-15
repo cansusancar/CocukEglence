@@ -1,4 +1,4 @@
-package com.example.cocukeglence
+package com.example.cocukeglence.data.entity
 
 import java.io.Serializable
 import com.google.firebase.database.IgnoreExtraProperties
